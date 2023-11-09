@@ -27,8 +27,8 @@ dependencies {
     implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5' // or 'io.jsonwebtoken:jjwt-gson:0.11.5' for gson
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
-    compileOnly 'org.postgresql:postgresql'
-    developmentOnly 'com.h2database:h2'
+    implementation 'org.postgresql:postgresql'
+    implementation 'com.h2database:h2'
 
     implementation 'com.thedeanda:lorem:2.1'
     implementation 'org.ajbrown:name-machine:1.0.0'

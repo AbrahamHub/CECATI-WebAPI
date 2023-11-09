@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  springboot:
+    image: cecati-webapi
+    environment:
+      - USERNAME=sa
+      - PASSWORD=sa
+    ports:
+      - "8080:8080"
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_DB=spring-mvc-blog
+      - POSTGRES_USER=sa
+      - POSTGRES_PASSWORD=sa
+    ports:
+      - "5432:5432"
