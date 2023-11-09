@@ -23,7 +23,7 @@ WORKDIR /app
 COPY --from=builder /app/build/libs/react-blog-be-0.0.1-SNAPSHOT.jar /app/
 
 # Expose port 8080 (assuming your application uses this port)
-EXPOSE 8080
+EXPOSE 80
 
 # Define the command to run your application
 CMD ["java", "-jar", "react-blog-be-0.0.1-SNAPSHOT.jar"]
